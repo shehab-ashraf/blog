@@ -1,0 +1,56 @@
+project:
+  type: website
+  preview:
+    port: 4200
+  resources:
+    - posts/notebook_best_practices.html
+    - posts/notebook-best-practices.html
+    # Can't remember what next line was for
+    # - "*.png"
+
+website:
+  open-graph: true
+  title: "Shehab Ashraf"
+  favicon: favicon.ico
+  navbar:
+    background: dark
+    left:
+      - text: Posts
+        file: index.qmd
+      - projects
+      - Notes
+    right:
+      - icon: github
+        href: https://github.com/shehab-ashraf
+
+  site-url: https://shehabashraf.com
+  repo-url: https://github.com/shehab-ashraf/blog
+  repo-actions: [edit, source, issue]
+
+format:
+  html:
+    theme: seem.scss
+    highlight-style: seem.theme
+    include-in-header: [analytics-head.html]
+    include-after-body: [analytics-body.html]
+    metadata:
+      pagetitle: "{{< meta title >}}"
+      freeze: true
+      # Enable banner style title blocks
+      title-block-banner: false
+      author: Shehab Ashraf
+      # Can't yet enable this because it causes "On this page" to appear on index.html
+      # even if I set its post-level `toc: false`
+      # toc: true
+      title-block-categories: false
+      toc-depth: 5
+
+comments:
+  giscus: 
+    repo: seem/blog
+    repo-id: R_kgDOIBWk3A
+    category: Announcements
+    category-id: DIC_kwDOIBWk3M4CSSa6
+    mapping: pathname
+    loading: lazy
+    input-position: top

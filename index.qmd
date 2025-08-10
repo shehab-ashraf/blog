@@ -1,0 +1,30 @@
+---
+description: "A collection of technical blogs and talks on software engineering and machine learning."
+listing:
+  contents: [posts, posts.yml]
+  sort: "date desc"
+  categories: false
+  type: table
+  fields: [date, title]
+  feed: true
+  filter-ui: false
+  sort-ui: false
+  date-format: YYYY-MM-DD
+comments: false
+pagetitle: Shehab Ashraf
+author: ''
+title-block-style: none
+---
+
+
+<!-- ::: me
+![](images/me.JPG)
+::: -->
+
+Hi, I’m Shehab.
+I’m an ML/AI Engineer interested in creating tools, models, and frameworks that make deep learning more efficient, practical, and accessible.
+This is where I share my projects, experiments, and thoughts on machine learning, AI systems, and software engineering.
+
+<br>
+
+## Recent posts
